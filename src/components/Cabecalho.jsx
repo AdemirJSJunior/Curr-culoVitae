@@ -1,4 +1,4 @@
-export function Cabecalho(){
+export default function Cabecalho(){
     return(
         <header className="cabecalho">
             <div className="container cabecalho_conteudo">

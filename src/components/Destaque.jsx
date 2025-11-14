@@ -1,4 +1,4 @@
-export function Destaque(){
+export default function Destaque(){
     return(
         <section id="destaque" className="destaque">
             <div className="container destaque_conteudo">

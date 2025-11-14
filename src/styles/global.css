@@ -151,3 +151,223 @@ p{
     width: 80%;
     display: block;
 }
+
+/*-------SEÇÂO SOBRE------*/
+
+.sobre{
+    background: var(--superficie);
+    padding: 62px;
+    margin-top: 2%;
+}
+
+.sobre_conteudo{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sobre_cabeca{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.sobre_titulo{
+    font-size: 28px;
+    margin: 6px 0 0;
+}
+
+.sobre_texto{
+    max-width: 70ch;
+    margin: 0 auto 28px;
+    text-align: center;
+    line-height: 1.75;
+    color: var(--texto);
+}
+
+.sobre_texto p{
+    margin: 0 0 12px;
+}
+
+.sobre_infos{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: clamp(12px, 2.8vw, 20px);
+}
+
+.sobre_infos li{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+    background: var(--bg);
+    border: 1 px solid var(--borda);
+    border-radius: 12px;
+}
+
+.sobre_infos span{
+    font-size: 18px;
+    line-height: 1;
+}
+
+.sobre_infos li strong{
+    display: block;
+    color: var(--texto);
+}
+
+.sobre_infos li p{
+    margin: 2px 0 0;
+    color: var(--muted);
+}
+
+/*------HABILIDADES-------*/
+
+
+.habilidades{
+    padding: 72px 7%;
+    background: var(--bg);
+}
+
+.habilidades_cabeca{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.habilidades_titulo{
+    font-size: 28px;
+    margin: 6px 0 0;
+    text-align: center;
+}
+
+.habilidades_barras{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, fr));
+    gap: 14px;
+}
+
+.habilidade{
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.habilidade_topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.habilidade_nome{
+    font-weight: 600;
+}
+
+.habilidade_percentual{
+    color: var(--muted);
+}
+
+.habilidade_bar{
+    height: 10px;
+    background: var(--borda);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.habilidade_fill{
+    height: 100%;
+    background: var(--marca);
+    border-radius: inherit;
+    transition: width .35s ease;
+}
+
+.habilidades_tecnologias{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech{
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    color: var(--texto);
+}
+
+
+/*---------PROJETOS-------*/
+
+.projetos{
+    padding: 72px 7%;
+    background: var(--superficie);
+}
+
+.projetos_cabeca{
+    text-align: center;
+    margin-top: 24px;
+}
+
+.projetos_titulo{
+    font-size: 28px;
+    margin: 6px;
+}
+
+.projetos_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(14px, 2.8vw, 24px);
+}
+
+.projeto{
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.projeto:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 00);
+}
+
+.projeto_tumb{
+    background: var(--borda);
+}
+
+.projeto_tumb img{
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid var(--borda);
+}
+
+.projeto_corpo{
+    padding: 12px;
+    display: grid;
+    gap: 10px;
+}
+
+.projeto_titulo{
+    margin: 0;
+}
+
+.projeto_descricao{
+    margin: 0;
+    color: var(--muted);
+}
+
+.projeto_acoes{
+    margin-top: 4px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
